@@ -1,0 +1,38 @@
+body {
+    background-color: #eeeeee;
+}
+
+.h7 {
+    font-size: 0.8rem;
+}
+
+.container-fluid {
+    margin-top: 1rem;
+    z-index: 4000;
+}
+
+.left{
+    position: sticky;
+    top: 10%;
+    height: 100%;
+}
+
+#feed-template{
+    display: none;
+}
+
+@media (min-width: 992px) {
+    .main {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+    .gedf-card {
+        margin-bottom: 2.77rem;
+    }
+}
+
+/**Reset Bootstrap*/
+.dropdown-toggle::after {
+    content: none;
+    display: none;
+}

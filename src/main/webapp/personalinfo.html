@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Personal Details</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="padding:150px 0px;">
+<div class="main">
+
+    <section id="pinfo-section" class="pinfo">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+        <div class="container">
+            <div class="pinfo-content">
+<!--                <form method="POST" id="pinfo-form" class="pinfo-form" action="signin.html">-->
+<!--                    <h2 class="form-title">Enter Specifications about you!!</h2>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-input" name="email" id="email" placeholder="Email"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="text" class="form-input" name="contact" id="contact" placeholder="Contact"/>-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <input type="submit" name="submit" id="pinfo-submit" class="pinfo-submit" value="Confirm"/>-->
+<!--                    </div>-->
+<!--                </form>-->
+                <form method="POST" id="pinfo-form">
+
+                    <h2 class="form-title">Enter Specifications about you!!</h2>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="email" id="email" placeholder="Email" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" class="form-input" name="contact" id="contact" placeholder="Contact" required/>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="submit" id="pinfo-submit" class="pinfo-submit" value="Confirm"/>
+                    </div>
+                </form>
+                <p class="index">
+                    Incorrect Version ? <a href="index.html" class="index-link">Go Back <-</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/index.js"></script>
+<script src="js/pinfo-validation.js"></script>
+</body>
+</html>

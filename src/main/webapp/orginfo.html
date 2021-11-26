@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Organisation Details</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="padding:15% 15%;">
+<div class="main">
+
+    <section id="oinfo-section" class="oinfo">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+        <div class="oform-container">
+            <div class="oinfo-content">
+                <form method="POST" id="oinfo-form" class="oinfo-form">
+                    <h2 class="form-title">Enter Organisation Details</h2>
+                    <div id="oinfo-element">
+                        <div id="first-row-element" class="form-row element">
+                            <div class="col-md-3 ">
+                                <select id="company-names" name="ao[][company]" class="form-control" required>
+                                    <option>Company</option>
+                                </select>
+
+                            </div>
+                            <div class="form-group col-md-3">
+                                <input type="text" class="form-input" name="ao[][position]" placeholder="Position" required/>
+                            </div>
+                            <div class=" form-group col-md-2">
+                                <input type="text" class="form-input" name="ao[][joining_year]"  placeholder="Joining Year" required/>
+                            </div>
+                            <div class=" col-md-2">
+                                <input type="text" class="form-input" name="ao[][leaving_year]"  placeholder="Leaving Year" required/>
+                            </div>
+                            <div class="col-md-2">
+                                <input type="button" name="ao[][add-button]"  class="form-btn btn btn-success" onclick="add_more(this)" value="+" />
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                            <input type="submit" name="submit" id="einfo-submit" class="form-submit" value="Confirm"/>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/index.js"></script>
+<script src="js/oinfo-validation.js"></script>
+</body>
+</html>

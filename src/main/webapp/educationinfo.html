@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Education Details</title>
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body style="padding:15% 0%;">
+<div class="main">
+
+    <section id="einfo-section" class="einfo">
+        <!-- <img src="images/signup-bg.jpg" alt=""> -->
+        <div class="eform-container">
+            <div class="einfo-content">
+                <form method="POST" id="einfo-form" class="einfo-form">
+                    <h2 class="form-title">Enter Education Details</h2>
+                    <div id="einfo-element">
+                        <div class="form-row element">
+                            <div class="form-group col-md-3">
+                                <input type="text" class="form-input" name="ae[][college_name]" placeholder="College Name" required />
+                            </div>
+                            <div class="form-group col-md-3">
+                                <input type="text" class="form-input" name="ae[][address]"  placeholder="Address" required />
+                            </div>
+                            <div class="form-group col-md-2 ">
+                                <input type="text" class="form-input" name="ae[][degree]"  placeholder="Degree" required/>
+                            </div>
+                            <div class="form-row form-group col-md-4">
+                                <div class=" col-md-5">
+                                <input type="text" class="form-input" name="ae[][joining_year]"  placeholder="Joining Year" required/>
+                                </div>
+                                <div class=" col-md-5">
+                                    <input type="text" class="form-input" name="ae[][passing_year]"  placeholder="Passing Year" required/>
+                                </div>
+                                <div class="col-md-2">
+                                    <input type="button" name="ae[][add-button]"  class="form-btn btn btn-success" onclick="add_more(this)" value="+" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <input type="button" name="skip"  id="einfo-skip" class="form-submit" onclick="skip_edetails()" value="Skip" />
+                        </div>
+                        <div class="col-md-6">
+                            <input type="submit" name="submit" id="einfo-submit" class="form-submit" value="Confirm"/>
+                        </div>
+
+                    </div>
+                </form>
+<!--                <p class="index">-->
+<!--                    Click here, If not applicable ? <a href="orginfo.html" class="oinfo-link">SKIP</a>-->
+<!--                </p>-->
+            </div>
+        </div>
+    </section>
+
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<!--<script src="js/bootstrap.min.js"></script>-->
+<script src="js/index.js"></script>
+<script src="js/einfo-validation.js"></script>
+<script src="js/jquery.serialize-object.min.js"></script>
+</body>
+</html>
