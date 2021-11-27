@@ -17,7 +17,7 @@ Contributions:
 
 1. Saurabh Singh Rajpoot MT2020111 OrganisationControllerTest, PrimePath Coverage.
 
-2. Rushikesh Jachak: MT2020126 RegistrationControllerTest,PersonalInfoControllerTest
+2. Rushikesh Jachak: MT2020126 RegistrationControllerTest, PersonalInfoControllerTest
 
 3. Swapnil Jain: MT2020171 EducationalInfoControllerTest, ControlFlowGraph
 
